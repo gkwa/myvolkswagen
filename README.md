@@ -48,6 +48,3 @@ Monitor the Dependency Dashboard in your repository's issues section to track Re
 - Renovate Bot access
 - Go 1.22 or higher
 
-```
-
-```
