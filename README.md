@@ -1,30 +1,53 @@
-# myvolkswagen
+# Go Version Update Test
 
-Purpose:
+This project tests Renovate's ability to automatically update the Go version specified in go.mod files.
 
+## Purpose
 
-## example usage
+The repository serves as a testbed to verify if Renovate can detect and propose updates from Go 1.22 to the latest available version.
 
-```bash
+## Configuration
 
+The project includes:
+
+- GitHub Actions workflow for CI/CD
+- Renovate configuration optimized for Go updates
+- Automated testing and validation
+
+## Setup
+
+1. Clone the repository
+2. Ensure Renovate is configured for your repository
+3. Wait for Renovate to detect the Go version update
+
+## How It Works
+
+The project uses:
+
+- go.mod specifying Go 1.22
+- Renovate configuration with Go-specific settings
+- GitHub Actions workflow to validate updates
+
+## Repository Structure
 
 ```
-
-## install myvolkswagen
-
-
-on macos/linux:
-```bash
-
-brew install gkwa/homebrew-tools/myvolkswagen
-
+.
+├── .github/workflows/ci.yml
+├── .renovaterc.json
+├── go.mod
+└── README.md
 ```
 
+## Status
 
-on windows:
+Monitor the Dependency Dashboard in your repository's issues section to track Renovate's update proposals.
 
-```powershell
+## Requirements
 
-TBD
+- GitHub repository
+- Renovate Bot access
+- Go 1.22 or higher
+
+```
 
 ```
