@@ -31,11 +31,6 @@ jobs:
         run: |
           go build -v
           go test ./...
-      - name: Run GoReleaser
-        if: runner.os == 'Linux'
-        uses: goreleaser/goreleaser-action@9ed2f89a662bf1735a48bc8557fd212fa902bebf # v6
-        with:
-          args: release --snapshot --skip=publish --clean
       - name: Colored Output Test
         if: runner.os == 'Linux'
         shell: script -q -e -c "bash {0}"
