@@ -47,4 +47,3 @@ Monitor the Dependency Dashboard in your repository's issues section to track Re
 - GitHub repository
 - Renovate Bot access
 - Go 1.22 or higher
-
