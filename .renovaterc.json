@@ -10,7 +10,7 @@
     }
   ],
   "platformAutomerge": true,
-  "postUpdateOptions": ["gomodTidyE", "gomodUpdateImportPaths"],
+  "postUpdateOptions": ["gomodTidyE", "gomodMassage", "gomodUpdateImportPaths"],
   "prConcurrentLimit": 0,
   "prCreation": "immediate",
   "prHourlyLimit": 0
