@@ -15,7 +15,7 @@ require (
 	sigs.k8s.io/controller-runtime v0.19.2
 )
 
-require github.com/hashicorp/hcl/v2 v2.23.0 // indirect
+require github.com/hashicorp/hcl v1.0.0 // indirect
 
 require (
 	dario.cat/mergo v1.0.1 // indirect

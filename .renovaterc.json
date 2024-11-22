@@ -3,23 +3,15 @@
   "extends": ["config:best-practices", ":dependencyDashboard"],
   "packageRules": [
     {
-      "matchCategories": ["golang"],
-      "enabled": true
-    },
-    {
       "automerge": true,
       "automergeStrategy": "merge-commit",
       "matchDepTypes": ["*"],
       "recreateWhen": "always"
-    },
-    {
-      "matchManagers": ["gomod"],
-      "matchDepTypes": ["indirect", "golang"],
-      "enabled": true
     }
   ],
   "platformAutomerge": true,
-  "postUpdateOptions": ["gomodTidy", "gomodTidyE", "gomodUpdateImportPaths"],
+  "postUpdateOptions": ["gomodTidyE", "gomodUpdateImportPaths"],
   "prConcurrentLimit": 0,
+  "prCreation": "immediate",
   "prHourlyLimit": 0
 }
