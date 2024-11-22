@@ -13,12 +13,12 @@
     },
     {
       "matchManagers": ["gomod"],
-      "matchDepTypes": ["golang"],
+      "matchDepTypes": ["indirect", "golang"],
       "enabled": true
     }
   ],
   "platformAutomerge": true,
-  "postUpdateOptions": ["gomodTidyE", "gomodMassage", "gomodUpdateImportPaths"],
+  "postUpdateOptions": ["gomodTidy", "gomodTidyE", "gomodMassage", "gomodUpdateImportPaths"],
   "prConcurrentLimit": 0,
   "prHourlyLimit": 0
 }
